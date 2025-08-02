@@ -1,11 +1,13 @@
 // this file is resposible for data base connections
 
 const mongoose = require("mongoose");
+require("dotenv").config(); //
 
 //Define MongoDb Connection URL
-const mongoURL = "mongodb://localhost:27017/hotel"; //hotel:database name
+//const mongoURL = process.env.MONGODB_URL_LOCAL; //hotel:database name
 
-//Set up MongoDb connection
+const mongoURL = process.env.MONGODB_URL;
+// Set up MongoDb connection
 // mongoose.connect(mongoURL, {
 //   useNewUrlParser: true,
 //   useUnifiedTopnodemonology: true,
