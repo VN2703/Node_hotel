@@ -1,7 +1,6 @@
 // this file is resposible for data base connections
-
+require("dotenv").config();
 const mongoose = require("mongoose");
-require("dotenv").config(); //
 
 //Define MongoDb Connection URL
 //const mongoURL = process.env.MONGODB_URL_LOCAL; //hotel:database name
